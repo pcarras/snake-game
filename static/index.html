@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>RPG Engine Genérico — Demo</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+<header>
+  <h1>RPG Engine Genérico — Demo</h1>
+  <div class="meta">
+    <span id="loc">L??</span>
+    <span id="money">€0</span>
+    <span id="turn">T0</span>
+    <button id="btn-state">Estado</button>
+  </div>
+</header>
+<main>
+  <section class="left">
+    <div id="log" class="log"></div>
+    <form id="cmdform">
+      <input id="cmd" placeholder="Comando (examinar praia, norte, usar corda, falar)"/>
+      <button>OK</button>
+    </form>
+    <div class="voice"><button id="rec">🎙️ Falar</button> <span id="recstat"></span></div>
+    <div class="panel">
+      <h3>LLM (opcional)</h3>
+      <form id="llmform">
+        <input id="prompt" placeholder="Pede ajuda ao LLM (Groq/OpenRouter)"/>
+        <select id="prov"><option value="groq">Groq</option><option value="openrouter">OpenRouter</option></select>
+        <button>Enviar</button>
+      </form>
+    </div>
+  </section>
+  <section class="right">
+    <div class="panel"><h3>Inventário</h3><ul id="inv"></ul></div>
+    <div class="panel"><h3>Áudio</h3><audio id="player" controls></audio></div>
+  </section>
+</main>
+<script src="/static/client.js"></script>
+</body>
+</html>

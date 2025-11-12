@@ -1,0 +1,15 @@
+*{box-sizing:border-box;font-family:system-ui,Segoe UI,Roboto,Ubuntu,Arial,sans-serif}
+body{margin:0;background:#0c0f13;color:#e7ecf5}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:#12161f;border-bottom:1px solid #1e2534}
+h1{font-size:18px;margin:0}
+.meta{display:flex;gap:10px;align-items:center}
+.meta span,.meta button{background:#172033;border:1px solid #25314a;border-radius:8px;padding:6px 10px}
+.meta button{cursor:pointer;color:#e7ecf5}
+main{display:grid;grid-template-columns:1.6fr 1fr;gap:16px;padding:16px}
+.log{background:#0f1420;border:1px solid #1c2436;border-radius:12px;min-height:300px;padding:12px;overflow:auto}
+#cmdform{display:flex;gap:8px;margin-top:8px}
+#cmd{flex:1;padding:10px;border-radius:8px;border:1px solid #25314a;background:#0a0f19;color:#e7ecf5}
+#cmdform button{padding:10px 14px;border-radius:8px;background:#172033;border:1px solid #25314a;color:#e7ecf5}
+.panel{background:#0f1420;border:1px solid #1c2436;border-radius:12px;padding:12px;margin-top:12px}
+.voice{margin-top:8px}
+#rec{background:#2a3a5e;border:1px solid #314066;color:#e7ecf5;padding:8px 12px;border-radius:8px;cursor:pointer}
